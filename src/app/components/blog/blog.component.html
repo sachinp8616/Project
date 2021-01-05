@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-8">
+    <app-single-blog [blog]="blog"></app-single-blog>
+  </div>
+  <div class="col-4">
+    <app-adverties [blog]="blog"></app-adverties>
+  </div>
+</div>
+
+<p>title : {{ blog.title }}</p>
+<p>blog_url : {{ blog.blog_url }}</p>
+<small
+  >content :
+  <p [innerHtml]="blog.content"></p
+></small>
+<p>image : {{ blog.image }}</p>
+<p>author : {{ blog.author }}</p>
+<p>imaUrl : {{ blog.imgUrl }}</p>
+<p>category_id : {{ blog.category_id }}</p>
+<p>meta_title : {{ blog.meta_title }}</p>
+<p>meta_description : {{ blog.meta_description }}</p>
+<p>meta_keyword : {{ blog.meta_keyword }}</p>
+<p>time_toread : {{ blog.time_toread }}</p>

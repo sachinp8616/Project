@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    <img [src]="blog.imgUrl" alt="" class="img-fluid" style="cursor: pointer" (click)="gotoBlogDetails(blog.blog_url)" />
+    <div class="wrapper">
+      <span><i class="fa fa-user"></i> {{ blog.author }}</span>
+      <span><i class="far fa-calendar"></i> {{ blog.created_at | date }}</span>
+    </div>
+  </div>
+  <div class="card-footer">
+    <h4 style="cursor: pointer" (click)="gotoBlogDetails(blog.blog_url)">
+        {{ blog.title }}
+      </h4>
+    <p [innerHTML]="blog.content"></p>
+  </div>
+</div>
